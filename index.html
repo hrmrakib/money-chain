@@ -10,15 +10,84 @@
 
 <body>
     <!-- header -->
-    <header class="w-full h-screen bg-[url('./assets/hero-bg.png')]">
-        <nav>
+    <header
+        class="relative w-full bg-[#0c0e15] h-screen bg-[url('/assets/images/hero-bg.png')] bg-cover no-repeat top-center">
+        <!-- container -->
+        <div class="w-[1200px] mx-auto">
+            <nav class="flex justify-between items-center h-16">
+                <a href="/">
+                    <img src="./assets/icons/logo.png" alt="logo">
+                </a>
 
-        </nav>
+                <ul class="flex gap-4 *:text-white">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Solution</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Announcement</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="flex gap-4 items-center">
+                    <img class="w-6 h-6 cursor-pointer" src="./assets/icons/light-mode.png" alt="light-mode" />
+
+                    <select class="bg-[#0c0e15] text-white py-2" name="" id="">
+                        <option value="">English</option>
+                        <option value="">French</option>
+                        <option value="">Spanish</option>
+                        <option value="">Portuguese</option>
+                    </select>
+
+                    <button class="border border-gray-500 flex items-center gap-2 text-white px-4 py-2 rounded-md">
+                        <img class="w-4 h-4" src="./assets/icons/user.png" alt="login">
+                        Login
+                    </button>
+
+                    <button
+                        class="bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md">
+                        <img class="w-4 h-4" src="./assets/icons/user-add.png" alt="login">
+                        SignUp
+                    </button>
+                </div>
+            </nav>
+
+            <div class="h-[calc(100vh-64px)] flex items-center justify-between gap-2">
+                <div>
+                    <button class="py-1.5 px-2 flex items-center gap-2 font-medium rounded-md bg-[#26212f]">
+                        <img src="./assets/icons/star-img.png" alt="star">
+                        <span class="text-white">Sign Up now & get up to $5,000</span>
+                    </button>
+
+                    <h1 class="text-white text-6xl font-bold max-w-[550px] leading-[90px]">Trusted and Secure Digital
+                        Currency
+                        <span
+                            class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">Exchange</span>
+                    </h1>
+
+                    <p class="text-[#B6B6B6] max-w-[480px] mt-5">Try first if you get best experience to buying selling
+                        &
+                        exchange
+                        Digital Currency from our platform.</p>
+                    <button
+                        class="mt-4 bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md">
+                        Get Started
+                        <img class="w-4 h-4" src="./assets/icons/arrow-up-right.png" alt="arrow">
+                    </button>
+                </div>
+                <div class="relative">
+                    <img src="./assets/images/hero-right.png" alt="hero">
+                    <img class="absolute left-0 top-0" src="./assets/images/bitcoin-1.png" alt="bitcoin-1">
+                </div>
+            </div>
+        </div>
+
+
+        <img class="absolute size-62 top-0 right-0" src="./assets/images/Ellipse 2.png" alt="">
+        <img class="absolute size-62 left-0 bottom-0" src="./assets/images/blue-blur.png" alt="">
     </header>
 
     <!-- main -->
     <main>Main</main>
-    
+
     <!-- footer -->
     <footer>Footer</footer>
 </body>
