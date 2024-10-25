@@ -28,11 +28,11 @@
         <!-- container -->
         <div class="w-[1200px] mx-auto">
             <nav class="flex justify-between items-center h-16">
-                <a href="/">
+                <a href="/" class="cursor-pointer">
                     <img src="./assets/icons/logo.png" alt="logo">
                 </a>
 
-                <ul class="flex gap-4 text-white">
+                <ul class="flex gap-4 text-white *:cursor-pointer">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Solution</a></li>
                     <li><a href="#">Features</a></li>
@@ -50,13 +50,14 @@
                         <option value="">Portuguese</option>
                     </select>
 
-                    <button class="border border-gray-500 flex items-center gap-2 text-white px-4 py-2 rounded-md">
+                    <button
+                        class="border border-gray-500 flex items-center gap-2 text-white px-4 py-2 rounded-md cursor-pointer">
                         <img class="w-4 h-4" src="./assets/icons/user.png" alt="login">
                         Login
                     </button>
 
                     <button
-                        class="bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md">
+                        class="bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md cursor-pointer">
                         <img class="w-4 h-4" src="./assets/icons/user-add.png" alt="login">
                         SignUp
                     </button>
@@ -81,7 +82,7 @@
                         exchange
                         Digital Currency from our platform.</p>
                     <button
-                        class="mt-4 bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md">
+                        class="mt-4 bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md cursor-pointer">
                         Get Started
                         <img class="w-4 h-4" src="./assets/icons/arrow-up-right.png" alt="arrow">
                     </button>
@@ -449,60 +450,267 @@
 
                 <!-- table -->
 
-                <div class="w-full max-w-7xl p-5">
-                    <div class="overflow-x-auto">
-                        <table
-                            class="table-auto w-full bg-white shadow-md rounded-lg border-collapse border border-gray-300">
-                            <thead>
-                                <tr class="border border-[#1f1f27] bg-[#13141b] h-[60px]">
-                                    <th class="p-4 text-center text-[#F3BA2F] text-sm font-bold">#</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">NAME</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">PRICE</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">24h %</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">7d %</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">MARKETCAP</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">VOLUME</th>
-                                    <th class="p-4 text-center text-[#F3BA2F] text-xs font-bold">CIRCULATING SUPPLY</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border border-[#1f1f27] bg-[#13141b] h-[60px]">
-                                    <td class="p-4 text-white text-sm font-bold">1</td>
-                                    <td class="w-max border p-6 text-xs flex items-center justify-center gap-1.5">
-                                        <img class="size-[30px]" src="./assets/icons/table/bitcoin.png" alt="">
-                                        <span class="text-white">Bitcoin (BTC)</span>
-                                    </td>
-                                    <td class="p-4 text-white text-center text-sm font-bold">$60,852.41</td>
-                                    <td class="w-max p-4 flex items-center gap-1">
-                                        <img src="./assets/icons/table/chevron.png" alt="">
-                                        <span class="text-[#0BC355] text-center text-sm font-bold">2.67</span>
-                                    </td>
-                                    <td class="w-max p-4 flex items-center gap-1">
-                                        <img src="./assets/icons/table/chevron.png" alt="">
-                                        <span class="text-[#0BC355] text-center text-sm font-bold">2.67</span>
-                                    </td>
-                                    <td class="p-4 text-white text-center text-sm font-bold">$1,201,206,380,883</td>
-                                    <td class="p-4 text-white text-center text-sm font-bold">
-                                        $29.01,206,380,883 <br> 478,592 BTC</td>
-                                    <td class="p-4 text-white text-center text-sm font-bold">
-                                        $29.01,206,380,883</td>
-                                </tr>
-                                <tr>
-                                    <td class="p-4 border border-gray-300">1</td>
-                                    <td class="p-4 border border-gray-300">More</td>
-                                    <td class="p-4 border border-gray-300">Different content length</td>
-                                    <td class="p-4 border border-gray-300">Column text</td>
-                                    <td class="p-4 border border-gray-300">Even longer content for testing</td>
-                                    <td class="p-4 border border-gray-300">Data</td>
-                                    <td class="p-4 border border-gray-300">Short</td>
-                                    <td class="p-4 border border-gray-300">Information</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                < class="relative pb-2 overflow-x-auto overflow-y-auto max-h-[500px] scrollbar-container">
+                    <table class="w-[98%] text-sm text-left rtl:text-right text-gray-500 ">
+                        <thead class="sticky top-0 text-xs text-black uppercase bg-white *:text-[14px] py-8">
+                            <tr class="border border-[#1f1f27] bg-[#13141b] h-[60px] *:text-center">
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    #
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    NAME
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    PRICE
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    24h %
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    7d %
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    MARKETCAP
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    VOLUME
+                                </th>
+                                <th class="px-6 py-3 text-[#F3BA2F] text-sm font-bold">
+                                    CIRCULATING SUPPLY
+                                </th>
 
 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    1
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/bitcoin.png" alt="">
+                                    <span>Bitcoin (BTC)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    2
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/binance.png" alt="">
+                                    <span>Binance (BNB)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    3
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/Ethereum.png" alt="">
+                                    <span>Ethereum (ETH)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    4
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/tether.png" alt="">
+                                    <span>Tether (USDT)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    5
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/sol.png" alt="">
+                                    <span>Coin (SOL)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    6
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/xrp.png" alt="">
+                                    <span>XRP (XRP)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+                            <tr class="border border-[#1f1f27] bg-[#13141b]">
+                                <td class="px-6 py-4 rounded-l-lg">
+                                    7
+                                </td>
+                                <td class="px-6 flex items-center justify-center h-[70px] gap-2 text-[#B6B6B6]">
+                                    <img src="./assets/icons/table/usd.png" alt="">
+                                    <span>USD Coin (USDC)</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $60,852.41
+                                </td>
+                                <td class="px-10 py-4 items-center gap-1 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-10 py-4 text-[#0BC355] font-bold">
+                                    <img class="inline" src="./assets/icons/table/chevron.png" alt="">
+                                    <span class="ml-1">2.67</span>
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $1,201,206,380,883
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                    <br>
+                                    478,592 BTC
+                                </td>
+                                <td class="px-6 py-4 text-[#B6B6B6] font-bold">
+                                    $29.01,206,380,883
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+            </div>
             </div>
         </section>
 
@@ -654,12 +862,14 @@
         <div class="w-[1200px] mx-auto">
             <div class="grid grid-cols-6 items-start gap-4">
                 <div>
-                    <img src="./assets/icons/logo.png" alt="logo">
+                    <a href="#">
+                        <img src="./assets/icons/logo.png" alt="logo">
+                    </a>
                     <div class="flex items-center gap-2 mt-5">
-                        <img src="./assets/icons/instragram.png" alt="instragram">
-                        <img src="./assets/icons/facebook.png" alt="facebook">
-                        <img src="./assets/icons/twitter.png" alt="twitter">
-                        <img src="./assets/icons/youtybe.png" alt="youtybe">
+                        <a href="#"><img src="./assets/icons/instragram.png" alt="instragram"></a>
+                        <a href="#"><img src="./assets/icons/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="./assets/icons/twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="./assets/icons/youtybe.png" alt="youtybe"></a>
                     </div>
                 </div>
 
@@ -703,7 +913,7 @@
                         you’re on go</p>
 
                     <div class="max-w-[355px] mt-4 flex items-center gap-2 border border-purple-950 rounded-xl p-2">
-                        <input class="bg-transparent w-[70%] outline-none border-none" type="text"
+                        <input class="bg-transparent text-white w-[70%] outline-none border-none" type="text"
                             placeholder="Your Email">
                         <button
                             class="bg-gradient-to-l from-[#FFBB8C] via-[#FF77BA] to-[#A869FF] flex items-center gap-2 text-white px-2.5 py-2 rounded-md">
