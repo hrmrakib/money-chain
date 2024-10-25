@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Moneychain - Crypto Wallet</title>
+    <!-- inter google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .gradient-border {
+            box-sizing: content-box;
+            border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to right bottom, #260B3C, #a053df);
+            border-image-slice: 1;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 
-<body class="bg-[#0c0e15]">
+<body class="bg-[#0c0e15] font-inter">
     <!-- header -->
     <header
         class="relative w-full bg-[#0c0e15] h-screen bg-[url('/assets/images/hero-bg.png')] bg-cover bg-no-repeat bg-top">
@@ -189,15 +202,57 @@
                         secured by cryptography, operating on decentralized blockchain networks. It enables secure,
                         peer-to-peer transactions without intermediaries like banks.</p>
 
-                    <div>
-                        <div class="border border-[#313136] rounded-2xl px-5 pb-5">
-                            <div class="relative border h-24 flex flex-col">
-                                <img class="w-28 h-1/2" src="./assets/icons/down.png" alt="who">
-                                <img class="absolute top-4 z-10 size-14" src="./assets/icons/sqr1.png" alt="who">
-                                <img class="w-28 h-1/2" src="./assets/icons/up.png" alt="who">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
+                        <div class="max-w-60 border border-[#313136] rounded-2xl px-5 pb-10">
+                            <div class="relative w-36 mx-auto h-24 flex flex-col">
+                                <img class="w-36 h-16" src="./assets/icons/down.png" alt="who">
+                                <img class="absolute top-4 left-1/2 -translate-x-1/2 z-10 size-14"
+                                    src="./assets/icons/sqr1.png" alt="who">
+                                <img class="w-36 h-16" src="./assets/icons/up.png" alt="who">
                             </div>
-                            <h2 class="text-white text-2xl">Secure Transaction</h2>
-                            <p class="text-[#B6B6B6] text-center">Printing and typesetting. Lorem has been the standard.
+                            <h2 class="text-white text-lg font-medium text-center mt-5">Secure Transaction</h2>
+                            <p class="text-[#B6B6B6] text-sm text-center mt-3">Printing and typesetting. Lorem has been
+                                the
+                                standard.
+                            </p>
+                        </div>
+                        <div class="max-w-60 border border-[#313136] rounded-2xl px-5 pb-10">
+                            <div class="relative w-36 mx-auto h-24 flex flex-col">
+                                <img class="w-36 h-16" src="./assets/icons/down.png" alt="who">
+                                <img class="absolute top-4 left-1/2 -translate-x-1/2 z-10 size-14"
+                                    src="./assets/icons/sqr2.png" alt="who">
+                                <img class="w-36 h-16" src="./assets/icons/up.png" alt="who">
+                            </div>
+                            <h2 class="text-white text-lg font-medium text-center mt-5">Simple way Transfer</h2>
+                            <p class="text-[#B6B6B6] text-sm text-center mt-3">Printing and typesetting. Lorem has been
+                                the
+                                standard.
+                            </p>
+                        </div>
+                        <div class="max-w-60 border border-[#313136] rounded-2xl px-5 pb-10">
+                            <div class="relative w-36 mx-auto h-24 flex flex-col">
+                                <img class="w-36 h-16" src="./assets/icons/down.png" alt="who">
+                                <img class="absolute top-4 left-1/2 -translate-x-1/2 z-10 size-14"
+                                    src="./assets/icons/sqr3.png" alt="who">
+                                <img class="w-36 h-16" src="./assets/icons/up.png" alt="who">
+                            </div>
+                            <h2 class="text-white text-lg font-medium text-center mt-5">Save Trading</h2>
+                            <p class="text-[#B6B6B6] text-sm text-center mt-3">Printing and typesetting. Lorem has been
+                                the
+                                standard.
+                            </p>
+                        </div>
+                        <div class="max-w-60 border border-[#313136] rounded-2xl px-5 pb-10">
+                            <div class="relative w-36 mx-auto h-24 flex flex-col">
+                                <img class="w-36 h-16" src="./assets/icons/down.png" alt="who">
+                                <img class="absolute top-4 left-1/2 -translate-x-1/2 z-10 size-14"
+                                    src="./assets/icons/sqr4.png" alt="who">
+                                <img class="w-36 h-16" src="./assets/icons/up.png" alt="who">
+                            </div>
+                            <h2 class="text-white text-lg font-medium text-center mt-5">Trusted platform</h2>
+                            <p class="text-[#B6B6B6] text-sm text-center mt-3">Printing and typesetting. Lorem has been
+                                the
+                                standard.
                             </p>
                         </div>
                     </div>
@@ -427,9 +482,9 @@
                                         <span class="text-[#0BC355] text-center text-sm font-bold">2.67</span>
                                     </td>
                                     <td class="p-4 text-white text-center text-sm font-bold">$1,201,206,380,883</td>
-                                    <td class="p-4 text-right text-white text-center text-sm font-bold">
+                                    <td class="p-4 text-white text-center text-sm font-bold">
                                         $29.01,206,380,883 <br> 478,592 BTC</td>
-                                    <td class="p-4 text-center text-white text-center text-sm font-bold">
+                                    <td class="p-4 text-white text-center text-sm font-bold">
                                         $29.01,206,380,883</td>
                                 </tr>
                                 <tr>
@@ -451,12 +506,97 @@
             </div>
         </section>
 
+        <!-- Client Say -->
+        <section class="mt-24">
+            <div class="w-[1200px] mx-auto">
+                <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
+                    <span
+                        class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">
+                        Client
+                    </span>
+                    Say
+                </h1>
+
+                <p class="max-w-[500px] mx-auto text-center text-[#B6B6B6] mt-5">
+                    Clients praise the crypto wallet system for its ease of use, robust security, seamless transactions,
+                    and reliable multi-currency support.
+                </p>
+
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+                    <div class="relative w-[308px] gradient-border rounded-2xl px-5 pb-5">
+                        <img class="mx-auto w-[90px] h-[90px] -mt-12 rounded-full" src="./assets/images/jhon.png"
+                            alt="jhon">
+
+                        <h2 class="mt-8 text-xl font-bold text-white text-center">Jhon Smith</h2>
+                        <p class="mt-4 max-w-[250px] mx-auto text-sm leading-[20px] text-center text-[#B6B6B6]">
+                            Designers
+                            need
+                            to
+                            have a strong
+                            understanding of the
+                            principles of design in order to create
+                            effective solutions. They must also be aware of the latest trends and technologies the
+                            curve.</p>
+                        <h3 class="text-center text-white text-sm font-medium mt-4">CEO of Inkyy.com</h3>
+                        <div class="flex items-center justify-center gap-1.5 mt-4">
+                            <img src="./assets/icons/review-star.png" alt="">
+                            <img src="./assets/icons/review-star.png" alt="">
+                            <img src="./assets/icons/review-star.png" alt="">
+                            <img src="./assets/icons/review-star.png" alt="">
+                            <img src="./assets/icons/review-star.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Blog -->
+        <section class="mt-24">
+            <div class="w-[1200px] mx-auto">
+                <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
+                    Our
+                    <span
+                        class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">
+                        Blog
+                    </span>
+                </h1>
+
+                <p class="text-center text-[#B6B6B6] mt-5">
+                    It is long established fact that a reader will be Distracted
+                </p>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <div class="bg-[#13151B]">
+                        <img src="./assets/images/blog1.png" alt="blog-img">
+
+                        <div class="px-5 pb-12">
+                            <p class="w-max bg-[#212229] p-1.5 text-[#B6B6B6] text-sm font-medium my-3 rounded">CRYPTO
+                                BASIC
+                            </p>
+                            <h2 class="text-lg font-bold text-white leading-[24px]">The fact about bitcoin must
+                                you
+                                know
+                            </h2>
+                            <p class="text-[#B6B6B6] leading-[24px] mt-5">From direct deposit to earning yield, key ways
+                                crypto can help you take control..</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- footer -->
     <footer>Footer</footer>
 
-    <script src="./app/app.js"></script>
+    <script src=" ./app/app.js">
+    </script>
 </body>
 
 </html>
