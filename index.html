@@ -26,13 +26,13 @@
     <header
         class="relative w-full bg-[#0c0e15] h-screen bg-[url('/assets/images/hero-bg.png')] bg-cover bg-no-repeat bg-top">
         <!-- container -->
-        <div class="w-[1200px] mx-auto">
+        <div class="w-[94%] xl:w-[1200px] mx-auto">
             <nav class="flex justify-between items-center h-16">
                 <a href="/" class="cursor-pointer">
                     <img src="./assets/icons/logo.png" alt="logo">
                 </a>
 
-                <ul class="flex gap-4 text-white *:cursor-pointer">
+                <ul class="hidden lg:flex gap-4 text-white *:cursor-pointer">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Solution</a></li>
                     <li><a href="#">Features</a></li>
@@ -64,6 +64,7 @@
                 </div>
             </nav>
 
+            <!-- hero -->
             <div class="h-[calc(100vh-64px)] flex items-center justify-between gap-2">
                 <div>
                     <button class="py-1.5 px-2 flex items-center gap-2 font-medium rounded-md bg-[#26212f]">
@@ -71,10 +72,12 @@
                         <span class="text-white">Sign Up now & get up to $5,000</span>
                     </button>
 
-                    <h1 class="text-white text-6xl font-bold max-w-[550px] leading-[90px]">Trusted and Secure Digital
+                    <h1 class="text-white text-3xl lg:text-6xl font-bold max-w-[550px] leading-10 lg:leading-[90px]">
+                        Trusted and
+                        Secure Digital
                         Currency
                         <span
-                            class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">Exchange</span>
+                            class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent texxl font-bold">Exchange</span>
                     </h1>
 
                     <p class="text-[#B6B6B6] max-w-[480px] mt-5">Try first if you get best experience to buying selling
@@ -108,7 +111,7 @@
         <!-- Crypto Wallet System Features -->
         <section class="relative">
             <!-- container -->
-            <div class="w-[1200px] mx-auto">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <!-- section 1 -->
                 <div class="py-20">
                     <h1 class="text-white text-4xl font-bold text-center leading-[50px]">Crypto <br>
@@ -194,7 +197,7 @@
 
         <!-- Who we are -->
         <section class="relative">
-            <div class="w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
+            <div class="w-[94%] xl:w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
                 <div>
                     <h1 class="text-white text-5xl font-bold text-left leading-[50px]">
                         <span
@@ -202,7 +205,7 @@
                         we are
                     </h1>
 
-                    <p class="text-[#B6B6B6] mt-5">Cryptocurrency is a digital currency
+                    <p class="text-[#B6B6B6] mt-5 text-wrap">Cryptocurrency is a digital currency
                         secured by cryptography, operating on decentralized blockchain networks. It enables secure,
                         peer-to-peer transactions without intermediaries like banks.</p>
 
@@ -276,7 +279,7 @@
 
         <!-- Solution for -->
         <section class="relative">
-            <div class="w-[1200px] mx-auto">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
                     <span
                         class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">
@@ -364,7 +367,7 @@
 
         <!-- Frequently Asked Questions -->
         <section class="relative mt-28">
-            <div class="w-[1200px] mx-auto">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
                     Frequently Asked
                     <span
@@ -458,7 +461,7 @@
 
         <!-- Market Update -->
         <section class="mt-24">
-            <div class="w-[1200px] mx-auto">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
                     Market
                     <span
@@ -739,8 +742,8 @@
         </section>
 
         <!-- Client Say -->
-        <section class="mt-24">
-            <div class="w-[1200px] mx-auto">
+        <section class="relative mt-24">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
                     <span
                         class="bg-gradient-to-r from-[#A869FF] via-[#FF77BA] to-[#FFBB8C] bg-clip-text text-transparent text-6xl font-bold">
@@ -851,12 +854,17 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- effect -->
+            <img class="absolute top-0 left-0" src="./assets/images/client-left.png" alt="effect">
+            <img class="absolute top-0 right-0" src="./assets/images/client-right.png" alt="effect">
         </section>
 
 
         <!-- Our Blog -->
-        <section class="mt-24">
-            <div class="w-[1200px] mx-auto">
+        <section class="relative mt-24">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <h1 class="text-white text-6xl font-bold text-center leading-[50px]">
                     Our
                     <span
@@ -924,12 +932,13 @@
             </div>
 
             <!-- effect -->
-
+            <img class="absolute -top-28 left-5" src="./assets/images/blog-left.png" alt="effect">
+            <img class="absolute top-0 right-0" src="./assets/images/blog-right.png" alt="effect">
         </section>
 
         <!-- get started -->
         <section class="mt-24">
-            <div class="w-[1200px] mx-auto">
+            <div class="w-[94%] xl:w-[1200px] mx-auto">
                 <div class="relative bg-[#14161D] h-[200px] px-16 flex items-center justify-between rounded-lg">
                     <h1 class="max-w-md text-white text-3xl font-bold leading-[36px]">
                         Join the Evolution of
@@ -956,8 +965,8 @@
     <!-- footer -->
     <footer class="relative mt-24">
         <div class="w-[1200px] mx-auto pb-9">
-            <div class="grid grid-cols-6 items-start gap-4">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-6 items-start gap-4">
+                <div class="">
                     <a href="#">
                         <img src="./assets/icons/logo.png" alt="logo">
                     </a>
@@ -1003,7 +1012,7 @@
                     </ul>
                 </div>
 
-                <div class="col-span-2">
+                <div class="lg:col-span-2">
                     <h2 class="text-base font-bold text-white">Newsletter</h2>
                     <p class="max-w-[250px] text-[#B6B6B6] leading-5 mt-2">Never miss anything crypto when
                         you’re on go</p>
